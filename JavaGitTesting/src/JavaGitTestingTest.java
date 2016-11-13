@@ -11,13 +11,20 @@ public class JavaGitTestingTest {
 	public void setUp() throws Exception {
 	}
 
-	@After
-	public void tearDown() throws Exception {
-	}
+	
+public static void main(String[] args) {
 
+	JavaGitTestingTest xyz=new JavaGitTestingTest();
+	xyz.findMin(list );
+}
+	static int[] list= {1,2,3,4};
+	
+	
 	@Test
 	public static int findMin(int[] list)
-	{	assert list != null && list.length > 0 : "failed precondition";
+	{	
+		
+		assert list != null && list.length > 0 : "failed precondition";
 
 		int indexOfMin = 0;
 		for(int i = 1; i < list.length; i++)
@@ -28,5 +35,9 @@ public class JavaGitTestingTest {
 		return indexOfMin;
 
 
+	}
+
+	@After
+	public void tearDown() throws Exception {
 	}
 }
